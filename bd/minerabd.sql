@@ -41,3 +41,15 @@ INSERT INTO `tbformulario` (`id`, `nombre`, `edad`, `area`, `puesto_actual`, `an
 (20, 'Clotilde Gomez Posada', 29, 'DS-SISTEMAS', 'PROGRAMADOR SENIOR', 3, 'ARQUITECTO DE SOLUCIONES', 'CRECIMIENTO PROFESIONAL', '2021-12-04', 'PENDIENTE');
 
 -- --------------------------------------------------------
+
+CREATE TABLE `tbcolaborador` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) DEFAULT NULL,
+  `edad` int(11) DEFAULT NULL,
+  `correo` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `area` varchar(255) DEFAULT NULL,
+  `puesto_actual` varchar(255) DEFAULT NULL,
+  `anios_puesto` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
